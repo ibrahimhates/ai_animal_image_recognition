@@ -1,0 +1,13 @@
+streamlit>=1.22.0
+# GPU destekli PyTorch için aşağıdaki satırı kullanın
+# Windows için CUDA destekli PyTorch: 
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# veya requirements dosyasında:
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+pillow>=9.5.0
+numpy>=1.24.3
+scikit-learn>=1.2.2
+matplotlib>=3.7.1
+pandas>=2.0.1 
