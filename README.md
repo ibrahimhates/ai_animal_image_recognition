@@ -58,7 +58,14 @@ Tüm adımları (kurulum, veri hazırlama, eğitim ve çalıştırma) tek bir sc
 
 **Windows için:**
 ```bash
+# Sadece web arayüzünü başlatmak için
 run_example.bat
+
+# Veri seti hazırlama ve model eğitimini de gerçekleştirmek için
+run_example.bat -train
+
+# Tüm parametrelerle kullanmak için (-train bayrağı ile)
+run_example.bat -train 10 15 32 resnet50
 ```
 
 **Linux/Mac için:**
@@ -164,19 +171,23 @@ Projede hazır komut dosyaları bulunmaktadır:
 #### Windows için:
 
 ```bash
-run_example.bat [SINIF_SAYISI] [EPOCH_SAYISI] [BATCH_SIZE] [MODEL_ADI]
+# Temel kullanım (Sadece web arayüzünü başlatır)
+run_example.bat
+
+# Eğitim modu (Veri seti hazırlama ve eğitim gerçekleştirir)
+run_example.bat -train [SINIF_SAYISI] [EPOCH_SAYISI] [BATCH_SIZE] [MODEL_ADI]
 ```
 
 Örnekler:
 ```bash
-# Varsayılan değerlerle (10 sınıf, 10 epoch) - GPU otomatik tespit edilir
+# Sadece web arayüzünü başlatma
 run_example.bat
 
-# 10 sınıf, 5 epoch ile
-run_example.bat 10 5
+# Veri seti hazırlama ve varsayılan ayarlarla eğitim
+run_example.bat -train
 
-# Tam parametre kullanımı
-run_example.bat 10 10 32 resnet18
+# Veri seti hazırlama ve özel parametrelerle eğitim
+run_example.bat -train 10 5 64 resnet34
 ```
 
 #### Linux/Mac için:
