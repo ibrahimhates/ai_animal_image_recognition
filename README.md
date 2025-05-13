@@ -103,7 +103,7 @@ Bu projede 10 hayvan sınıfı içeren bir veri seti kullanılmıştır. Tanına
 1. Projeyi bilgisayarınıza klonlayın:
 ```
 git clone https://github.com/ibrahimhates/ai_animal_image_recognition
-cd hayvan-siniflandirici
+cd ai_animal_image_recognition
 ```
 
 2. Gerekli kütüphaneleri yükleyin:
