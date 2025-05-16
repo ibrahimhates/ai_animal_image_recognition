@@ -15,8 +15,8 @@ ENV/
 
 # Model weights and datasets
 dataset/
-model/model_weights.pth
-model/training_history.png
+#model/model_weights.pth
+#model/training_history.png
 
 # Jupyter Notebook
 .ipynb_checkpoints
